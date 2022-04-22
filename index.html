@@ -143,14 +143,13 @@
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
 
-<div class="divider line"></div>
 <script type="text/javascript">
 
-if(sessionStorage.pagecount){
-	sessionStorage.pagecount=Number(sessionStorage.pagecount)+1;
+	if(null !=localStorage.pagecount){
+		localStorage.pagecount=Number(localStorage.pagecount)+1;
 	}else{
-	sessionStorage.pagecount=1;
-	}
-	document.write("已经访问了："+sessionStorage.pagecount+"次");
+		localStorage.pagecount=1;
+		}
+	document.write("已经访问了"+localStorage.pagecount+"次<br>");
 
-	</script>
+</script>
